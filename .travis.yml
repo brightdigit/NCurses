@@ -7,7 +7,7 @@ jobs:
       osx_image: xcode11.4
 env:
   global:
-  - FRAMEWORK_NAME=_PACKAGE_NAME
+  - FRAMEWORK_NAME=NCurses
 before_install:
   - bash -e ./Scripts/before_install.sh
 script:

@@ -21,7 +21,11 @@ let package = Package(
         .target(
             name: "cncurses",
             dependencies: [],
-            path: "Sources/cncurses/c++"),
+            path: "Sources/cncurses/c++",
+    cxxSettings: [
+        .headerSearchPath("../include"),
+        .headerSearchPath("."),
+    ]),
         .testTarget(
             name: "cncursesTests",
             dependencies: ["cncurses"]),
